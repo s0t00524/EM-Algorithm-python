@@ -4,7 +4,7 @@ EM Algorithm (python implements)
 
 ## How to use
 
-'''bash
+'''
 python main.py
 '''
 
