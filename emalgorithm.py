@@ -210,7 +210,7 @@ class EMAlgorithm:
             for X in self.X_plot:
                 im = plt.scatter(X[:, 0], X[:, 1], marker='+', s=5, color=color1[i])
                 i += 1
-            for k in range(K):
+            for k in range(self.K):
                 im = plt.scatter(self.mu[k, 0], self.mu[k, 1], marker='s', s=20, color=color2[k])
 
             if np.allclose(L_previous, L_now):
@@ -250,7 +250,7 @@ class EMAlgorithm:
         for X in self.X_plot:
             im = plt.scatter(X[:, 0], X[:, 1], marker='+', s=5, color=color1[i])
             i += 1
-        for k in range(K):
+        for k in range(self.K):
             im = plt.scatter(self.mu[k, 0], self.mu[k, 1], marker='s', s=20, color=color2[k])
         print_gmm_contour(self.mu, self.sigma, self.pi, self.K)
 
